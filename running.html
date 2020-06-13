@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Running App</title>
+
+    <link rel="stylesheet" type="text/css" href="running.css">
+    <script  type="text/javascript" src="paper-full.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+
+            <h1>Race pace planner</h1>
+
+              <div class="form-group">
+                <label for="race-distance">Race distance</label>
+                <select class="form-control" id="race-distance">
+                    <option>2k</option>
+                    <option>3k</option>
+                    <option>4k</option>
+                    <option>5k</option>
+                    <option>6k</option>
+                    <option>10k</option>
+                </select>
+              </div>
+
+              <label for="pace-minutes">Target pace</label>
+              <div class="input-group">
+                <input type="text" id="pace-minutes" class="form-control" placeholder="4">
+                <div class="input-group-append">
+                    <span class="input-group-text">m</span>
+                  </div>
+                <input type="text" id="pace-seconds" class="form-control" placeholder="30">
+                <div class="input-group-append">
+                    <span class="input-group-text">s</span>
+                  </div>
+              </div>
+
+              <br />
+
+              <label for="time-hours">Target time</label>
+              <div class="input-group">
+                
+                <input type="text" id="time-hours" class="form-control">
+                <div class="input-group-append">
+                    <span class="input-group-text">h</span>
+                  </div>
+                <input type="text" id="time-minutes" class="form-control" placeholder="22">
+                <div class="input-group-append">
+                    <span class="input-group-text">m</span>
+                  </div>
+                <input type="text" id="time-seconds" class="form-control" placeholder="30">
+                <div class="input-group-append">
+                    <span class="input-group-text">s</span>
+                  </div>
+              </div>
+
+              
+              <!-- <br /> -->
+
+              <!-- <button type="button" class="btn btn-primary" id="calculate" onclick="renderPacePlanningWidget()">Calculate</button> -->
+
+              <!-- <br /> -->
+
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-sm">
+
+                    <br />
+
+            <div class="canvas" id="canvas-holder"></div>
+            <!-- <canvas id="myCanvas"></canvas> -->
+
+            <br />
+
+              <button type="button" class="btn btn-primary" id="upload-strava">Upload Strava route (GPX)</button>
+
+                </div>
+            
+        </div>
+
+        
+
+        </div>
+      </div>
+
+
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script  type="text/javascript" src="running.js" ></script>
+
+</body>
+
+</html>
