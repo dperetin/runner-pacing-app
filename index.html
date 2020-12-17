@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170111199-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170111199-1');
+</script>
+
     <meta charset="UTF-8">
     <title>Running App</title>
 
@@ -20,17 +30,42 @@
         <div class="row">
           <div class="col-sm">
 
-            <h1>Race pace planner</h1>
+            <h1>Race Pace Planner</h1>
 
               <div class="form-group">
                 <label for="race-distance">Race distance</label>
                 <select class="form-control" id="race-distance">
-                    <option>2k</option>
-                    <option>3k</option>
-                    <option>4k</option>
-                    <option>5k</option>
-                    <option>6k</option>
-                    <option>10k</option>
+                    <!-- <option value="1">1000m</option> -->
+                    <option value="1.5">1500m</option>
+                    <option value="1.6">1600m</option>
+                    <option value="1.60934">Mile</option>
+                    <option value="2">2000m</option>
+                    <option value="2.41402">1.5 Mi</option>
+                    <option value="3">3000m</option>
+                    <option value="3.2">3200m</option>
+                    <option value="3.21869">2 Mi</option>
+                    <option value="4">4000m</option>
+                    <option value="4.82803">3 Mi</option>
+                    <option value="5" selected>5000m</option>
+                    <option value="6">6000m</option>
+                    <option value="6.43738">4 Mi</option>
+                    <option value="8">8000m</option>
+                    <option value="8.04672">5 Mi</option>
+                    <option value="10">10km</option>
+                    <option value="12">12km</option>
+                    <option value="15">15km</option>
+                    <option value="16.0934">10 Mi</option>
+                    <option value="20">20km</option>
+                    <option value="21.0975">1/2 Marathon</option>
+                    <option value="24.1402">15 Mi</option>
+                    <option value="25">25km</option>
+                    <option value="30">30km</option>
+                    <option value="32.1869">20 Mi</option>
+                    <option value="42.195">Marathon</option>
+                    <!-- <option value="50">50km</option>
+                    <option value="80.4672">50 Mi</option>
+                    <option value="100">100km</option>
+                    <option value="160.934">100 Mi</option> -->
                 </select>
               </div>
 
@@ -65,6 +100,11 @@
                   </div>
               </div>
 
+              <br />
+
+              <label for="file-selector">Upload Strava route (GPX)</label>
+              <input type="file" class="form-control-file" id="file-selector" accept=".gpx">
+
               
               <!-- <br /> -->
 
@@ -82,10 +122,11 @@
             <div class="canvas" id="canvas-holder"></div>
             <!-- <canvas id="myCanvas"></canvas> -->
 
-            <br />
+            
 
-              <button type="button" class="btn btn-primary" id="upload-strava">Upload Strava route (GPX)</button>
-
+              
+              <br />
+              <!-- <button type="button" class="btn btn-primary" id="upload-strava" >Upload Strava route (GPX)</button> -->
                 </div>
             
         </div>
